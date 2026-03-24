@@ -22,7 +22,9 @@
       --radius-sm: 16px;
       --container: 1180px;
     }
-
+.feature-card {
+  cursor: pointer;
+}
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -978,22 +980,22 @@
           </div>
 
           <div class="feature-grid">
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('detail', 1)" style="cursor:pointer">
               <div class="icon-box">🥽</div>
               <h3>Xem nhà bằng VR</h3>
               <p>Nhúng tour 360° để người dùng trải nghiệm trực quan hơn so với ảnh tĩnh thông thường.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" onclick="navigate('properties')" style="cursor:pointer">
               <div class="icon-box">🔎</div>
               <h3>Tìm kiếm & lọc</h3>
               <p>Lọc theo nhu cầu như loại nhà, khu vực, mức giá và từ khóa để tìm căn phù hợp nhanh hơn.</p>
             </div>
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('detail', 1)" style="cursor:pointer">
               <div class="icon-box">📍</div>
               <h3>Chi tiết rõ ràng</h3>
               <p>Hiển thị diện tích, số phòng, vị trí, tiện ích và mô tả để người dùng có đủ thông tin ra quyết định.</p>
             </div>
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('contact')" style="cursor:pointer">
               <div class="icon-box">📩</div>
               <h3>Đặt lịch xem</h3>
               <p>Gửi yêu cầu xem nhà thực tế hoặc nhận tư vấn nhanh qua form liên hệ ngay trên website.</p>
@@ -1011,22 +1013,22 @@
             </div>
           </div>
           <div class="feature-grid">
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('properties')">
               <div class="icon-box">⏱️</div>
               <h3>Tiết kiệm thời gian</h3>
               <p>Không cần đi xem quá nhiều nơi trước. Chỉ đến tận nơi với những căn thực sự phù hợp.</p>
             </div>
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('properties')">
               <div class="icon-box">🚗</div>
               <h3>Giảm chi phí đi lại</h3>
               <p>Đặc biệt hữu ích với người sống xa, làm việc bận hoặc cần tìm nhà ở khu vực chưa quen thuộc.</p>
             </div>
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('properties')">
               <div class="icon-box">🧠</div>
               <h3>Dễ so sánh nhiều căn</h3>
               <p>Nhìn nhanh mức giá, diện tích, vị trí và tiện ích để đưa ra lựa chọn hợp lý hơn.</p>
             </div>
-            <div class="feature-card">
+<div class="feature-card" onclick="navigate('properties')">
               <div class="icon-box">✨</div>
               <h3>Trải nghiệm hiện đại</h3>
               <p>Tạo cảm giác đây là một startup công nghệ về bất động sản, không chỉ là website bài tập thông thường.</p>
