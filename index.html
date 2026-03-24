@@ -914,6 +914,10 @@ select option:hover {
   height: calc(100% - 56px);
   perspective: 1400px;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .house-glow {
@@ -946,11 +950,13 @@ select option:hover {
   position: absolute;
   left: 50%;
   top: 52%;
-  width: 260px;
-  height: 220px;
+  width: 300px;
+  height: 260px;
   transform-style: preserve-3d;
   transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-28deg);
   animation: houseRotate 10s ease-in-out infinite;
+  margin: auto;
+
 }
 
 .house-floor {
@@ -1404,20 +1410,6 @@ select option:hover {
         <div class="house-lamp"></div>
       </div>
 
-      <div class="hero-side-cards">
-        <div class="hero-side-card">
-          <h4>🎯 Đúng đối tượng sử dụng</h4>
-          <p>Phù hợp với người đi làm bận rộn, người sống ở xa và người không muốn tốn nhiều thời gian đi xem nhiều nơi.</p>
-        </div>
-
-        <div class="hero-side-card">
-          <h4>🥽 VR tham quan căn nhà</h4>
-          <p>Xem bố cục không gian, cảm nhận phòng ốc và ra quyết định nhanh hơn trước khi đi xem thực tế.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
       <section class="section" id="features">
         <div class="container">
