@@ -1260,6 +1260,7 @@ select option:hover {
         vr: 'https://my.matterport.com/show/?m=J7a8n6r8sHf',
         tags: ['Có VR', 'Nội thất đầy đủ', 'Phù hợp thuê ở'],
         galleryTheme: 'warm'
+        image: "link_ảnh",
       },
       {
         id: 2,
@@ -1279,6 +1280,7 @@ select option:hover {
         vr: 'https://my.matterport.com/show/?m=SxQL3iGyoDo',
         tags: ['Có VR', 'Phù hợp mua ở', 'Nhà phố hiện đại'],
         galleryTheme: 'sunset'
+        image: "link_ảnh",
       },
       {
         id: 3,
@@ -1298,6 +1300,7 @@ select option:hover {
         vr: 'https://my.matterport.com/show/?m=2jJk0jW5o3f',
         tags: ['Có VR', 'Giá tốt', 'Phù hợp người độc thân'],
         galleryTheme: 'coast'
+        image: "link_ảnh",
       },
       {
         id: 4,
@@ -1317,6 +1320,7 @@ select option:hover {
         vr: 'https://my.matterport.com/show/?m=J7a8n6r8sHf',
         tags: ['Không gian xanh', 'Căn hộ tiện nghi', 'Gần trung tâm'],
         galleryTheme: 'forest'
+        image: "link_ảnh",
       },
       {
         id: 5,
@@ -1336,6 +1340,7 @@ select option:hover {
         vr: 'https://my.matterport.com/show/?m=SxQL3iGyoDo',
         tags: ['Mua ở lâu dài', 'Vị trí đẹp', 'Mặt tiền lớn'],
         galleryTheme: 'gold'
+        image: "link_ảnh",
       },
       {
         id: 6,
@@ -1355,6 +1360,7 @@ select option:hover {
         vr: 'https://my.matterport.com/show/?m=2jJk0jW5o3f',
         tags: ['Giá tốt', 'Gọn gàng', 'Ở một mình'],
         galleryTheme: 'night'
+        image: "link_ảnh",
       }
     ];
 
@@ -1431,7 +1437,7 @@ select option:hover {
               <div class="badge">${property.featured ? '⭐ Nổi bật' : '🏠 Gợi ý'}</div>
               <div class="badge">${formatBadge(property)}</div>
             </div>
-            ${createSceneHTML(property.galleryTheme)}
+            <img src="${property.image}" style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="property-content">
             <div class="property-top">
