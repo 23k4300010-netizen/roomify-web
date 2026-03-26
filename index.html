@@ -116,23 +116,27 @@
       min-width: 0;
     }
 
-   .brand-logo {
-  width: 52px;
-  height: 52px;
+.brand-logo {
+  width: 64px;
+  height: 64px;
   border-radius: 16px;
   overflow: hidden;
-  flex: 0 0 52px;
-  background: linear-gradient(135deg, #14253e, #0d1730);
-  border: 1px solid rgba(255,255,255,0.12);
+  flex: 0 0 64px;
+  background: linear-gradient(135deg, #0f1f38, #132b4f, #0b1830);
+  border: 1px solid rgba(255, 210, 120, 0.22);
   display: grid;
   place-items: center;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 8px 20px rgba(0,0,0,0.28);
+  padding: 6px;
 }
 .brand-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  transform: scale(1.18);
 }
     .brand-title {
       font-size: 24px;
