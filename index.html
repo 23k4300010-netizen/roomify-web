@@ -1026,6 +1026,168 @@ select option:hover {
       .brand-sub { display: none; }
       .header-wrap { min-height: 70px; }
     }
+    .site-footer {
+  position: relative;
+  margin-top: 40px;
+  border-top: 1px solid rgba(247,197,106,.28);
+  background:
+    linear-gradient(rgba(4,10,20,.78), rgba(4,10,20,.92)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #eef4ff;
+  overflow: hidden;
+  text-align: left;
+  padding: 0;
+}
+
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8,17,31,.40) 0%, rgba(8,17,31,.82) 100%);
+  pointer-events: none;
+}
+
+.footer-inner {
+  position: relative;
+  z-index: 1;
+  padding-top: 56px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  padding-bottom: 40px;
+}
+
+.footer-col {
+  min-width: 0;
+}
+
+.footer-brand {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.footer-brand span {
+  color: var(--gold);
+}
+
+.footer-desc {
+  max-width: 560px;
+  color: rgba(238,244,255,.82);
+  line-height: 1.9;
+  font-size: 16px;
+  margin: 0 0 22px;
+}
+
+.footer-info {
+  display: grid;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.footer-info strong,
+.footer-block strong {
+  color: #ffffff;
+}
+
+.footer-social-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.footer-social,
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-social a,
+.footer-bottom-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(247,197,106,.28);
+  background: rgba(255,255,255,.05);
+  color: #fff3d4;
+  font-weight: 700;
+  transition: .25s ease;
+}
+
+.footer-social a:hover,
+.footer-bottom-links a:hover {
+  transform: translateY(-2px);
+  background: rgba(247,197,106,.14);
+}
+
+.footer-heading {
+  margin: 0 0 14px;
+  font-size: 34px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.footer-heading:nth-of-type(2) {
+  margin-top: 36px;
+}
+
+.footer-heading span {
+  color: var(--gold);
+}
+
+.footer-block {
+  color: rgba(238,244,255,.86);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.footer-block p {
+  margin: 0 0 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 0 28px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: rgba(238,244,255,.88);
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footer-brand {
+    font-size: 32px;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
   </style>
 </head>
 <body>
@@ -1297,10 +1459,54 @@ select option:hover {
     </section>
   </main>
 
-  <footer>
-    <div class="container">© 2026 Roomify. Web demo xem nhà bằng VR cho người bận rộn và người ở xa.</div>
-  </footer>
+<footer class="site-footer">
+  <div class="footer-overlay"></div>
 
+  <div class="container footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">ROOMIFY <span>VR</span></div>
+        <p class="footer-desc">
+          Nền tảng xem nhà bằng VR giúp người dùng tham quan không gian sống từ xa,
+          xem nhanh thông tin căn hộ, nhà ở và đặt lịch thuận tiện hơn.
+        </p>
+
+        <div class="footer-info">
+          <div><strong>Địa chỉ:</strong> 99 Hồ Đắc Di, Phường An Đông, Thành phố Huế</div>
+          <div><strong>Liên hệ:</strong> 055988429</div>
+        </div>
+
+        <div class="footer-social-title">Kết nối với chúng tôi</div>
+        <div class="footer-social">
+          <a href="https://www.tiktok.com/@roomify_hue?_r=1&_t=ZS-94yHsa8g9DD" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://www.facebook.com/share/1B5myjBGo1/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">THÔNG TIN LIÊN HỆ</h3>
+        <div class="footer-block">
+          <p><strong>Địa chỉ:</strong> 99 Hồ Đắc Di, Phường An Đông, Thành phố Huế</p>
+          <p><strong>Số điện thoại:</strong> 055988429</p>
+        </div>
+
+        <h3 class="footer-heading">ROOMIFY HUE</h3>
+        <div class="footer-block">
+          <p>Chuyên giới thiệu giải pháp xem nhà, phòng trọ, căn hộ bằng công nghệ VR.</p>
+          <p>Hỗ trợ người dùng xem trước không gian sống nhanh chóng và trực quan hơn.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div><strong>Roomify</strong> © 2026. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="https://www.tiktok.com/@roomify_hue?_r=1&_t=ZS-94yHsa8g9DD" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.facebook.com/share/1B5myjBGo1/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
   <div class="toast" id="toast"></div>
 
   <script>
