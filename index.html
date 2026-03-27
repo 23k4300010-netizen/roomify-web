@@ -1154,13 +1154,14 @@ select option:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 110px;
-  padding: 11px 16px;
+  min-width: 160px;
+  padding: 16px 24px;
   border-radius: 999px;
   border: 1px solid rgba(247,197,106,.28);
   background: rgba(255,255,255,.05);
   color: #fff3d4;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 18px;
   transition: .25s ease;
 }
 
@@ -1216,55 +1217,29 @@ select option:hover {
     gap: 34px;
   }
 
+  .footer-brand-box {
+    gap: 10px;
+  }
 
-.footer-map-actions {
-  margin-top: 18px;
-  display: flex;
-  justify-content: flex-start;
-}
+  .footer-brand-logo {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 72px;
+  }
 
-.footer-map-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 190px;
-  padding: 16px 26px;
-  border-radius: 999px;
-  border: 1px solid rgba(247,197,106,.28);
-  background: rgba(255,255,255,.05);
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 18px;
-  transition: .25s ease;
-}
+  .footer-brand-logo img {
+    width: 66px;
+    height: 66px;
+  }
 
-.footer-map-btn:hover {
-  transform: translateY(-2px);
-  background: rgba(247,197,106,.14);
-}
-}
-.footer-brand-box {
-  gap: 10px;
-}
+  .footer-brand-name {
+    font-size: 34px;
+  }
 
-.footer-brand-logo {
-  width: 72px;
-  height: 72px;
-  flex: 0 0 72px;
-}
+  .footer-brand-sub {
+    font-size: 15px;
+  }
 
-.footer-brand-logo img {
-  width: 66px;
-  height: 66px;
-}
-
-.footer-brand-name {
-  font-size: 34px;
-}
-
-.footer-brand-sub {
-  font-size: 15px;
-}
   .footer-heading {
     font-size: 28px;
   }
@@ -1272,6 +1247,13 @@ select option:hover {
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-social a,
+  .footer-bottom-links a {
+    min-width: 140px;
+    padding: 14px 20px;
+    font-size: 16px;
   }
 }
   </style>
@@ -1573,6 +1555,7 @@ select option:hover {
         <div class="footer-social">
           <a href="https://www.tiktok.com/@roomify_hue?_r=1&_t=ZS-94yHsa8g9DD" target="_blank" rel="noopener noreferrer">TikTok</a>
           <a href="https://www.facebook.com/share/1B5myjBGo1/" target="_blank" rel="noopener noreferrer">Facebook</a>
+           <a href="https://maps.app.goo.gl/frPZEbCGjfpAAJbp7" target="_blank" rel="noopener noreferrer">Địa chỉ</a>
         </div>
       </div>
 
@@ -1583,15 +1566,7 @@ select option:hover {
           <p><strong>Số điện thoại:</strong> 055988429</p>
         </div>
 
-      <div class="footer-map-actions">
-  <a
-    class="footer-map-btn footer-social-like"
-    href="https://maps.app.goo.gl/frPZEbCGjfpAAJbp7"
-    target="_blank"
-    rel="noopener noreferrer">
-    Địa chỉ
-  </a>
-</div>
+    
       </div>
     </div>
 
